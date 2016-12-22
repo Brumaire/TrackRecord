@@ -58,7 +58,7 @@ public class TrackRecordService extends Service implements GoogleApiClient.Conne
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Log.i(TAG, "LoactionHistoryService執行");
+        Log.i(TAG, "TrackRecordService執行");
 
         // 連線到Google API用戶端
         if (!googleApiClient.isConnected()) {
