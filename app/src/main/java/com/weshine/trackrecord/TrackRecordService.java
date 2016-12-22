@@ -149,7 +149,7 @@ public class TrackRecordService extends Service implements GoogleApiClient.Conne
         // 設定讀取位置資訊最快的間隔時間為10秒(因為其他程式可能也會取得更新位置，所以要限制)，預設是 interval frequency的6倍
         locationRequest.setFastestInterval(10000);
         // 設定讀取位置資訊的最小間隔距離為5米，可以用來過濾不必要的更新
-//        locationRequest.setSmallestDisplacement(5);
+        locationRequest.setSmallestDisplacement(5);
         // 設定優先讀取高精確度的位置資訊（GPS）
         locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
         Log.i(TAG, "建立LocationRequest");
